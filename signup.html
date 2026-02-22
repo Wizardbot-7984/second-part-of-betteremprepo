@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- BASIC SETTING THAT I PUT IN HTML THAT ARE IMPORTANT BUT I DONT KNOW WHAT THEY DOOO LOLOLOL -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildscore Signup</title>
+
+    <!-- PUT JAVA FILES SO IT DOES NOT GET COOKED AND BREAK LOL -->
+    <script src="wildscore.js"></script>
+
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <h1>Calculate Your Wildscore</h1>
+
+    <!-- Main form -->
+   
+    <form id="wildForm" action="results.html">
+        <!-- Waste management selection HOW WELL DO YOU MANAGE WASTES  -->
+        <label for="Waste">How do you manage your waste?</label>
+        <select id="Waste" name="Waste" size="5">
+            <option value="Everything in recycling">Everything in recycling</option>
+            <option value="Everything in trash">Everything in trash</option>
+            <option value="I sort everything">I sort everything</option>
+            <option value="I put it wherever I want">I put it wherever I want</option>
+            <option value="No">No</option>
+        </select>
+
+        <!-- Transportation selection WHAT TRANSPORTION DO YOU LIKE TO USE -->
+        <label for="Transportation">Choose your transportation:</label>
+        <select id="Transportation" name="Transportation" size="5">
+            <option value="Drive Solo">Drive Solo</option>
+            <option value="Mixed Transport">Mixed Transport</option>
+            <option value="Bike/Walk">Bike/Walk</option>
+            <option value="Mostly Public">Mostly Public</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <!-- Chemical usage HOW OFTEN ARE YOU BUYING/USING CHEMICALS-->
+        <label for="ChemicalUse">How often do you use chemicals?</label>
+        <select id="ChemicalUse" name="ChemicalUse" size="3">
+            <option value="Never">Never</option>
+            <option value="Sometimes">Sometimes</option>
+            <option value="Frequent">Frequent</option>
+        </select>
+
+        <!-- Plastic usage HOW MUCH PLASTIC DO YOU USE AND WASTE -->
+        <label for="PlasticUse">How often do you use single-use plastics?</label>
+        <select id="PlasticUse" name="PlasticUse" size="3">
+            <option value="I always use single use items">I always use single use items</option>
+            <option value="I use both">I use both</option>
+            <option value="I never use single use items">I never use single use items</option>
+        </select>
+
+        <!-- Energy usage HOW MUCH ENERGY YOU MIGHT USE A DAY -->
+        <label for="EnergyUse">How much energy do you use at home?</label>
+        <select id="EnergyUse" name="EnergyUse" size="3">
+            <option value="Low Energy Use">Low Energy Use</option>
+            <option value="Medium Energy Use">Medium Energy Use</option>
+            <option value="High Energy Use">High Energy Use</option>
+        </select>
+
+        <!-- Positive wildlife actions -->
+        <label for="PositiveWildlifeImpact">What actions do you do to help wildlife?</label>
+        <!-- MULTIPLE SELECTION ALLOWED SINCE PEOPLE MIGHT DO MORE THAN 1 -->
+        <select id="PositiveWildlifeImpact" name="PositiveWildlifeImpact" size="6" multiple>
+            <option value="Native Plants">Native Plants</option>
+            <option value="Pollinator Garden">Pollinator Garden</option>
+            <option value="Bird Safe">Bird Safe</option>
+            <option value="Outdoor Lights Off At Night">Outdoor Lights Off At Night</option>
+            <option value="Wildlife Volunteering">Wildlife Volunteering</option>
+            <option value="NONE">None</option>
+        </select>
+
+        <!-- Habitat WHAT TYPE OF PLACE DO YOU LIVE IN -->
+        <label for="Habitat">Where do you live?</label>
+        <select id="Habitat" name="Habitat" size="4">
+            <option value="apartment">Apartment</option>
+            <option value="suburban">Suburban</option>
+            <option value="rural">Rural</option>
+            <option value="urban">Urban</option>
+        </select>
+
+        <!-- Organic food consumption HOW MUCH ORGANICS DO YOU BUY/EAT-->
+        <label for="Food">How much organic food do you consume?</label>
+        <select id="Food" name="Food" size="3">
+            <option value="Low Organic Food Consumption">Low Organic Food Consumption</option>
+            <option value="Medium Organic Food Consumption">Medium Organic Food Consumption</option>
+            <option value="High Organic Food Consumption">High Organic Food Consumption</option>
+        </select>
+
+        <!-- Appliances HOW ENERGY THEY ARE -->
+        <label for="Appliances">How energy efficient are your appliances?</label>
+        <select id="Appliances" name="Appliances" size="3">
+            <option value="I have no energy efficient appliances">I have no energy efficient appliances</option>
+            <option value="I have some energy efficient appliances">I have some energy efficient appliances</option>
+            <option value="I have all energy efficient appliances">I have all energy efficient appliances</option>
+        </select>
+        <!-- Submit button TO SUBMIT AND SEE HOW MUCH YOU HELP WILDLIFE-->
+        <input type="submit" value="Calculate your Wildscore!">
+    </form>
+</body>
+</html>
